@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoSport - Apartar Auto</title>
+</head>
+<body>
+
+    <header>
+        <h1>AutoSport Colombia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Apartar / Comprar Auto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+                <img src="apartar.jpg" alt="Auto deportivo de lujo" width="600">
+
+    </main>
+    <main>
+        <h2>Apartar o Comprar un Auto Deportivo</h2>
+        
+        <form action="#" method="post">
+            <p>
+                <label for="auto">Selecciona el auto:</label><br>
+                <select id="auto" name="auto_seleccionado">
+                    <option value="ferrari">Ferrari F8 Tributo</option>
+                    <option value="porsche">Porsche 911 GT3</option>
+                    <option value="lamborghini">Lamborghini Huracán</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Tipo de solicitud:</label><br>
+                <input type="radio" id="apartar" name="tipo" value="apartar" checked>
+                <label for="apartar">Apartar / Reserva</label><br>
+                
+                <input type="radio" id="comprar" name="tipo" value="comprar">
+                <label for="comprar">Compra Directa</label>
+            </p>
+
+            <!-- CAMPO DE FECHA PARA LA PRUEBA DE MANEJO -->
+            <p>
+                <label for="fecha">Fecha para la prueba de manejo:</label><br>
+                <input type="date" id="fecha" name="fecha_prueba">
+            </p>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </main>
+
+</body>
+</html>
