@@ -16,5 +16,45 @@
             <p>Los datos recopilados en este formulario (nombre e información de contacto) serán utilizados única y exclusivamente para gestionar la reparación y seguimiento de los equipos o mobiliario del ambiente de formación. No serán compartidos con terceros.</p>
         </section>
     </main>
+    <!-- Sección de Detalles del Reporte -->
+        <section>
+            <h2>Detalles del Reporte</h2>
+
+            <form action="#" method="POST">
+                <!-- Campo de Texto Básico -->
+                <label for="nombreCompleto">Nombre del Aprendiz:</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                <br><br>
+
+                <!-- Lista Desplegable (Combobox) -->
+                <label for="tipoNovedad">Tipo de Novedad:</label>
+                <select id="tipoNovedad" name="tipoNovedad" required>
+                    <option value="">Seleccione una categoría...</option>
+                    <option value="hardware">Daño en equipo de cómputo</option>
+                    <option value="software">Falla de software o red</option>
+                    <option value="infraestructura">Daño en mobiliario o electricidad</option>
+                </select>
+                <br><br>
+            </form>
+            <!-- Casillas de verificación (Checkboxes) accesibles -->
+                <fieldset>
+                    <legend>Elementos específicos afectados:</legend>
+                    
+                    <input type="checkbox" id="afectaMonitor" name="afectados" value="monitor">
+                    <label for="afectaMonitor">Monitor o Pantalla</label><br>
+
+                    <input type="checkbox" id="afectaTeclado" name="afectados" value="teclado">
+                    <label for="afectaTeclado">Teclado o Mouse</label><br>
+
+                    <input type="checkbox" id="afectaTorre" name="afectados" value="torre">
+                    <label for="afectaTorre">Torre / CPU</label>
+                </fieldset>
+                <br>
+
+                <!-- Área de texto (Textarea) -->
+                <label for="descripcion">Descripción detallada de la falla:</label><br>
+                <textarea id="descripcion" name="descripcion" rows="4" placeholder="Ej: El equipo de la mesa 3 no enciende..." required></textarea>
+                <br><br>
+        </section>
 </body>
 </html>
